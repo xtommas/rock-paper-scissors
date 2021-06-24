@@ -8,10 +8,39 @@
     <!-- css link -->
     <link rel="stylesheet" href="./styles/style.css">
 
+    <!-- Google Fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+
+    <header>
+        <h1>Rock paper scissors</h1>
+    </header>
+    <main>
+        <div class="buttons">
+            <div class="btn">
+                <p id="rock" class="option">&#9994;</p>
+            </div>
+            <div class="btn">
+                <p id="paper" class="option">&#9995;</p>
+            </div>
+            <div class="btn">
+                <p id="scissors" class="option">&#9996;</p>
+            </div>
+        </div>
+        <div class="result">
+            <p id="message" class="messageClass"></p>
+        </div>
+        <div class="container">
+            <button id="start">Start game</button>
+            <p class="scoreBoard" id="score"></p>
+        </div>
+    </main>
     <!-- js link-->
-   <script src="./scripts/main.js"></script> 
+   <script src="./scripts/main.js" defer></script> 
 </body>
 </html>
