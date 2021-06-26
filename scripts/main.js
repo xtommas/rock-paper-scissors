@@ -34,23 +34,6 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-function game(){
-    
-    let computerSelection = "";
-    let result;
-    
-    computerSelection = computerPlay();
-    result = playRound(playerSelection, computerSelection)
-    console.log(result);
-    playerSelection = "";
-    // update the scores
-    if(result.includes("win")){
-        playerScore++;
-    } else if(result.includes("lose")){
-        computerScore++;
-    }
-}
-
 function updateScore(){
     scoreP.textContent = `You: ${playerScore} / Computer: ${computerScore}`;
 }
